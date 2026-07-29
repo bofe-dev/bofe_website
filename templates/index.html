@@ -11,7 +11,7 @@
 
                 <p class="text-xl">{{ trans(key="description", lang=lang) }}</p>
 
-                <div class="mt-8 flex flex-wrap justify-center gap-4">
+                <div id="download" class="pt-8 flex flex-wrap justify-center gap-4">
                     <a class="btn btn-outline btn-primary btn-lg" href="https://bofe.app" target="_blank">
                         {{ trans(key="go-to-web-app", lang=lang) }}
                     </a>
@@ -36,9 +36,33 @@
         <div class="relative">
         <img
             class="absolute right-0 w-[120px] h-[48px] object-none object-right-top"
-            src="{{ get_url(path='screenshot-v0.0.0-alpha.27.jpg') }}"
+            src="{{ get_url(path='screenshot-v0.0.0-alpha.28.jpg') }}"
         />
-        <img class="h-[860px] object-cover object-left-top" src="{{ get_url(path='screenshot-v0.0.0-alpha.27.jpg') }}" />
+        <img class="h-[639px] object-cover object-left-top" src="{{ get_url(path='screenshot-v0.0.0-alpha.28.jpg') }}" />
+        </div>
+    </div>
+</section>
+
+<section id="open-source" class="mt-8">
+    <div class="hero bg-base-200 p-4 rounded-2xl">
+        <div class="hero-content w-full">
+            <div class="w-full">
+                <h2 class="text-2xl text-center font-bold">{{ trans(key="open-source", lang=lang) }}</h2>
+
+                <p class="mt-4 text-lg">{{ trans(key="open-source-description", lang=lang) }}</p>
+
+                <div class="flex flex-wrap justify-center gap-4 mt-4">
+                    <a class="btn btn-outline" href="https://github.com/javierEd/bofe" target="_blank">
+                        <img alt="GitHub Logo" class="w-5 h-5" src="{{ get_url(path='github.svg') }}" />
+                        {{ trans(key="server-repository", lang=lang) }}
+                    </a>
+
+                    <a class="btn btn-outline" href="https://github.com/javierEd/bofe_app" target="_blank">
+                        <img alt="GitHub Logo" class="w-5 h-5" src="{{ get_url(path='github.svg') }}" />
+                        {{ trans(key="client-repository", lang=lang) }}
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
