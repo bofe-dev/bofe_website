@@ -51,15 +51,23 @@
 
                 <footer class="footer">
                     <aside class="opacity-75">
-                        <p>{{ trans(key="version", lang=lang) }}: {{ config.extra.version }} </p>
+                        <p>
+                            <a
+                                href="https://github.com/bofe-dev/bofe_website"
+                                target="_blank"
+                                title="{{ trans(key='go-to-source-code', lang=lang) }}"
+                            >
+                                {{ trans(key="version", lang=lang) }}: {{ config.extra.version }}
+                            </a>
+                        </p>
 
                         <p>© 2026 Bofe Group</p>
                     </aside>
 
                     <nav>
-                        <a class="flex gap-2" href="https://github.com/bofe-dev/bofe_website" target="_blank">
-                            {{ trans(key="source-code", lang=lang) }}
-                            <img class="size-5" src="{{ get_url(path='arrow-top-right-on-square-micro.svg') }}" />
+                        <a class="flex gap-2" href="https://github.com/bofe-dev" target="_blank">
+                            <img class="size-5" src="{{ get_url(path='github.svg') }}" />
+                            GitHub
                         </a>
                     </nav>
 
