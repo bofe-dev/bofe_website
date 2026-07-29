@@ -25,8 +25,7 @@
 
                 <div class="navbar-center max-sm:hidden">
                     <ul class="menu menu-horizontal x-2">
-                        <li><a href="/">{{ trans(key="home", lang=lang) }}</a></li>
-                        <li><a href="https://bofe.app/javier/roadmap" target="_blank">{{ trans(key="roadmap", lang=lang) }}</a></li>
+                        {% include 'menu.html' %}
                     </ul>
                 </div>
 
@@ -41,8 +40,7 @@
                             tabindex="-1"
                             class="menu dropdown-content mt-4"
                         >
-                            <li><a href="/">{{ trans(key="home", lang=lang) }}</a></li>
-                            <li><a href="https://bofe.app/javier/roadmap" target="_blank">{{ trans(key="roadmap", lang=lang) }}</a></li>
+                            {% include 'menu.html' %}
                         </ul>
                     </div>
                 </div>
@@ -60,8 +58,8 @@
 
                     <nav>
                         <a class="flex gap-2" href="https://github.com/javierEd/bofe_website" target="_blank">
-                            <img alt="Logo" class="w-5 h-5" src="{{ get_url(path='github.svg') }}" />
-                            GitHub
+                            {{ trans(key="source-code", lang=lang) }}
+                            <img class="size-5" src="{{ get_url(path='arrow-top-right-on-square-micro.svg') }}" />
                         </a>
                     </nav>
 
