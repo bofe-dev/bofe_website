@@ -71,3 +71,19 @@
 @utility wrapper {
     @apply absolute flex flex-col inset-0;
 }
+
+[data-theme="light"] {
+    .dark-only {
+        display: none;
+    }
+}
+
+[data-theme="dark"] {
+    .light-only {
+        display: none;
+    }
+
+    img.icon {
+        filter: invert(1);
+    }
+}

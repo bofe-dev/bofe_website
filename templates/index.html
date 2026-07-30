@@ -33,12 +33,21 @@
         <div class="mockup-browser-toolbar">
             <div class="input">https://bofe.app/#/javier/roadmap</div>
         </div>
-        <div class="relative">
-        <img
-            class="absolute right-0 w-[120px] h-[48px] object-none object-right-top"
-            src="{{ get_url(path='screenshot-v0.0.0-alpha.28.jpg') }}"
-        />
-        <img class="h-[639px] object-cover object-left-top" src="{{ get_url(path='screenshot-v0.0.0-alpha.28.jpg') }}" />
+
+        <div class="relative light-only">
+            <img
+                class="absolute right-0 w-[120px] h-[48px] object-none object-right-top"
+                src="{{ get_url(path='screenshot-light-v0.0.0-alpha.28.jpg') }}"
+            />
+            <img class="h-[639px] object-cover object-left-top" src="{{ get_url(path='screenshot-light-v0.0.0-alpha.28.jpg') }}" />
+        </div>
+
+        <div class="relative dark-only">
+            <img
+                class="absolute right-0 w-[120px] h-[48px] object-none object-right-top"
+                src="{{ get_url(path='screenshot-dark-v0.0.0-alpha.28.jpg') }}"
+            />
+            <img class="h-[639px] object-cover object-left-top" src="{{ get_url(path='screenshot-dark-v0.0.0-alpha.28.jpg') }}" />
         </div>
     </div>
 </section>
@@ -53,12 +62,12 @@
 
                 <div class="flex flex-wrap justify-center gap-4 mt-4">
                     <a class="btn btn-outline" href="https://github.com/bofe-dev/bofe" target="_blank">
-                        <img alt="GitHub Logo" class="w-5 h-5" src="{{ get_url(path='github.svg') }}" />
+                        <img alt="GitHub Logo" class="icon size-5" src="{{ get_url(path='github.svg') }}" />
                         {{ trans(key="server-repository", lang=lang) }}
                     </a>
 
                     <a class="btn btn-outline" href="https://github.com/bofe-dev/bofe_app" target="_blank">
-                        <img alt="GitHub Logo" class="w-5 h-5" src="{{ get_url(path='github.svg') }}" />
+                        <img alt="GitHub Logo" class="icon size-5" src="{{ get_url(path='github.svg') }}" />
                         {{ trans(key="client-repository", lang=lang) }}
                     </a>
                 </div>

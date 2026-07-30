@@ -1,14 +1,18 @@
 {
     "private": true,
     "scripts": {
-        "build": "npx @tailwindcss/cli --minify --input ./style.css --output ./static/style.css",
-        "watch": "npx @tailwindcss/cli --minify --input ./style.css --output ./static/style.css --watch"
+        "build:js": "npx esbuild ./script.js --minify --target=es2015 --outfile=./static/script.js",
+        "build:css": "npx @tailwindcss/cli --minify --input ./style.css --output ./static/style.css",
+        "watch:js": "npx esbuild ./script.js --minify --target=es2015 --outfile=./static/script.js --watch",
+        "watch:css": "npx @tailwindcss/cli --minify --input ./style.css --output ./static/style.css --watch",
+        "build": "npm run build:js && npm run build:css"
     },
     "dependencies": {
         "daisyui": "^5.7.7"
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.20",
+        "esbuild": "^0.28.1",
         "tailwindcss": "^4.3.3"
     }
 }
