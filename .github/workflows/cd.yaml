@@ -24,7 +24,7 @@ jobs:
             - uses: actions/checkout@v7
             - uses: actions/configure-pages@v6
             - uses: ./.github/actions/setup-node
-            - name: Generate CSS file
+            - name: Generate CSS & JS files
               run: npm run build
             - name: Build Zola + upload Pages artifact
               uses: getzola/github-pages@435a833fd3f1edcb28d70576c89e30a6365cd8f7
