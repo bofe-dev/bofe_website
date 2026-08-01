@@ -7,7 +7,7 @@
     <div class="hero bg-base-200 p-4 rounded-2xl">
         <div class="hero-content text-center">
             <div>
-                <h1 class="h1 text-3xl">{{ trans(key="tagline", lang=lang) }}</h1>
+                <h1 class="h1">{{ trans(key="tagline", lang=lang) }}</h1>
 
                 <p class="text-xl">{{ trans(key="description", lang=lang) }}</p>
 
@@ -36,18 +36,115 @@
 
         <div class="relative light-only">
             <img
-                class="absolute right-0 w-[120px] h-[48px] object-none object-right-top"
-                src="{{ get_url(path='screenshot-light-v0.0.0-alpha.28.jpg') }}"
+                class="absolute right-0 w-[110px] h-[42px] object-none object-right-top"
+                src="{{ get_url(path='screenshot-light-v0.0.0-alpha.30.jpg') }}"
             />
-            <img class="h-[639px] object-cover object-left-top" src="{{ get_url(path='screenshot-light-v0.0.0-alpha.28.jpg') }}" />
+            <img
+                class="h-[600px] object-cover object-left-top"
+                src="{{ get_url(path='screenshot-light-v0.0.0-alpha.30.jpg') }}"
+            />
         </div>
 
         <div class="relative dark-only">
             <img
-                class="absolute right-0 w-[120px] h-[48px] object-none object-right-top"
-                src="{{ get_url(path='screenshot-dark-v0.0.0-alpha.28.jpg') }}"
+                class="absolute right-0 w-[110px] h-[42px] object-none object-right-top"
+                src="{{ get_url(path='screenshot-dark-v0.0.0-alpha.30.jpg') }}"
             />
-            <img class="h-[639px] object-cover object-left-top" src="{{ get_url(path='screenshot-dark-v0.0.0-alpha.28.jpg') }}" />
+            <img
+                class="h-[600px] object-cover object-left-top"
+                src="{{ get_url(path='screenshot-dark-v0.0.0-alpha.30.jpg') }}"
+            />
+        </div>
+    </div>
+</section>
+
+<section id="features" class="mt-8">
+    <div class="hero bg-base-200 p-4 rounded-2xl">
+        <div class="hero-content w-full">
+            <div class="w-full">
+                <h2 class="h2 text-center">{{ trans(key="features", lang=lang) }}</h2>
+
+                <div class="feature">
+                    <div class="flex-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-32 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
+                        </svg>
+
+                        <h3 class="h3 text-center mt-2">{{ trans(key="boards", lang=lang) }}</h3>
+
+                        <p class="text-lg">
+                            {{ trans(key="boards-description", lang=lang) }}
+                        </p>
+                    </div>
+
+                    <div class="flex-1">
+                        <img class="light-only rounded-xl max-h-[360px] mx-auto" src="{{ get_url(path='boards-light-v0.0.0-alpha.30.jpg') }}" />
+                        <img class="dark-only rounded-xl max-h-[360px] mx-auto" src="{{ get_url(path='boards-dark-v0.0.0-alpha.30.jpg') }}" />
+                    </div>
+                </div>
+
+                <div class="feature sm:flex-row-reverse">
+                    <div class="flex-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-32 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0ZM3.75 12h.007v.008H3.75V12Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm-.375 5.25h.007v.008H3.75v-.008Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                        </svg>
+
+                        <h3 class="h3 text-center mt-2">{{ trans(key="lists", lang=lang) }}</h3>
+
+                        <p class="text-lg">
+                            {{ trans(key="lists-description", lang=lang) }}
+                        </p>
+                    </div>
+
+                    <div class="flex-1">
+                        <img class="light-only rounded-xl max-h-[360px] mx-auto" src="{{ get_url(path='lists-light-v0.0.0-alpha.30.jpg') }}" />
+                        <img class="dark-only rounded-xl max-h-[360px] mx-auto" src="{{ get_url(path='lists-dark-v0.0.0-alpha.30.jpg') }}" />
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <div class="flex-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-32 mx-auto">
+                            <path
+                               stroke-linecap="round"
+                               stroke-linejoin="round"
+                               d="M 5.25,15.55 H 8.1231021 M 4.5,19.5 h 15 c 1.242641,0 2.25,-1.007359 2.25,-2.25 V 6.75 C 21.75,5.5073593 20.742641,4.5 19.5,4.5 H 4.5 C 3.2573593,4.5 2.25,5.5073593 2.25,6.75 v 10.5 c 0,1.242641 1.0073593,2.25 2.25,2.25 z m 0.75,-7.6 h 4.468047 z m 0,-3.7 h 0.6702835 m 6.0300255,3.7 h 5.707789 z m -1.616548,3.65 h 3.247112 m 2.402536,0 h 2.633244 M 8.248431,8.2 h 3.316862 m 2.225448,0 h 4.453789"
+                            />
+                        </svg>
+
+                        <h3 class="h3 text-center mt-2">{{ trans(key="cards", lang=lang) }}</h3>
+
+                        <p class="text-lg">
+                            {{ trans(key="cards-description", lang=lang) }}
+                        </p>
+                    </div>
+
+                    <div class="flex-1">
+                        <img class="light-only rounded-xl max-h-[360px] mx-auto" src="{{ get_url(path='cards-light-v0.0.0-alpha.30.jpg') }}" />
+                        <img class="dark-only rounded-xl max-h-[360px] mx-auto" src="{{ get_url(path='cards-dark-v0.0.0-alpha.30.jpg') }}" />
+                    </div>
+                </div>
+
+                <div class="feature sm:flex-row-reverse">
+                    <div class="flex-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-32 mx-auto">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+                        </svg>
+
+                        <h3 class="h3 text-center mt-2">{{ trans(key="labels", lang=lang) }}</h3>
+
+                        <p class="text-lg">
+                            {{ trans(key="labels-description", lang=lang) }}
+                        </p>
+                    </div>
+
+                    <div class="flex-1">
+                        <img class="light-only rounded-xl max-h-[360px] mx-auto" src="{{ get_url(path='labels-light-v0.0.0-alpha.30.jpg') }}" />
+                        <img class="dark-only rounded-xl max-h-[360px] mx-auto" src="{{ get_url(path='labels-dark-v0.0.0-alpha.30.jpg') }}" />
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -56,7 +153,7 @@
     <div class="hero bg-base-200 p-4 rounded-2xl">
         <div class="hero-content w-full">
             <div class="w-full">
-                <h2 class="text-2xl text-center font-bold">{{ trans(key="open-source", lang=lang) }}</h2>
+                <h2 class="h2 text-center">{{ trans(key="open-source", lang=lang) }}</h2>
 
                 <p class="mt-4 text-lg">{{ trans(key="open-source-description", lang=lang) }}</p>
 
