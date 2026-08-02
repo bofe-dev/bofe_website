@@ -36,24 +36,34 @@
 
         <div class="relative light-only">
             <img
-                class="absolute right-0 w-[110px] h-[42px] object-none object-right-top"
+                class="absolute left-0 w-[140px] h-[42px] object-none object-left-top"
                 src="{{ get_url(path='screenshot-light-v0.0.0-alpha.30.jpg') }}"
             />
+
             <img
-                class="h-[600px] object-cover object-left-top"
+                class="absolute right-0 w-[100px] h-[42px] object-none object-right-top"
                 src="{{ get_url(path='screenshot-light-v0.0.0-alpha.30.jpg') }}"
             />
+
+            <div class="overflow-x-auto overscroll-none">
+                <img class="max-w-none" src="{{ get_url(path='screenshot-light-v0.0.0-alpha.30.jpg') }}"/>
+            </div>
         </div>
 
         <div class="relative dark-only">
             <img
-                class="absolute right-0 w-[110px] h-[42px] object-none object-right-top"
+                class="absolute left-0 w-[140px] h-[42px] object-none object-left-top"
                 src="{{ get_url(path='screenshot-dark-v0.0.0-alpha.30.jpg') }}"
             />
+
             <img
-                class="h-[600px] object-cover object-left-top"
+                class="absolute right-0 w-[100px] h-[42px] object-none object-right-top"
                 src="{{ get_url(path='screenshot-dark-v0.0.0-alpha.30.jpg') }}"
             />
+
+            <div class="overflow-x-auto overscroll-x-none">
+                <img class="max-w-none" src="{{ get_url(path='screenshot-dark-v0.0.0-alpha.30.jpg') }}"/>
+            </div>
         </div>
     </div>
 </section>
