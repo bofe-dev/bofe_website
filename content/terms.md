@@ -2,7 +2,7 @@
 title = "Terms of Service"
 slug = "terms"
 date = "2026-05-18"
-updated = "2026-05-18"
+updated = "2026-08-02"
 +++
 
 ## AGREEMENT TO OUR LEGAL TERMS
@@ -162,7 +162,12 @@ As a user of the Services, you agree not to:
 
 ## 7. USER GENERATED CONTRIBUTIONS
 
-The Services does not offer users to submit or post content.
+The Services may allow users to submit or post content, including but not limited to text, images, videos, or other materials (collectively, "User Content"). By submitting User Content, you agree to the following:
+
+- **Ownership**: You retain ownership of your User Content but grant us a worldwide, royalty-free, sublicensable, and transferable license to use, reproduce, distribute, modify, and display it in connection with the Services.
+- **Prohibited Content**: You may not submit User Content that is unlawful, defamatory, harassing, hateful, violent, obscene, or otherwise inappropriate, as determined by us in our sole discretion.
+- **Moderation**: We reserve the right to remove or modify any User Content that violates these terms or our community guidelines.
+- **Privacy**: Do not submit User Content that violates the privacy or rights of others.
 
 ## 8. CONTRIBUTION LICENSE
 
