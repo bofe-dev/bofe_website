@@ -8,7 +8,7 @@
         "build": "npm run build:js && npm run build:css"
     },
     "dependencies": {
-        "daisyui": "^5.7.7"
+        "daisyui": "^5.7.9"
     },
     "devDependencies": {
         "@tailwindcss/typography": "^0.5.20",
